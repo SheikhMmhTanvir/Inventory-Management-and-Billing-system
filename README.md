@@ -1,2 +1,1 @@
-# Supermarket-Billing-System
-A C++ mini project on Supermarket Billing System
+Inventory Management and Billing system
