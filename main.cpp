@@ -36,7 +36,7 @@ cout<<"\nEnter the Name of the Product			:	";
 cin>>name;
 cout<<"\nEnter the Price of the Product			:	";
 cin>>price;
-cout<<"\nEnter the Discount (%) of the Product	:	";
+cout<<"\nEnter the Discount (%) of the Product		:	";
 cin>>dis;
 xz=xz+1;
 }
@@ -163,12 +163,15 @@ cout<<"\n\n\n Program is closing ....";
 exit(0);
 }
 cout<<"\n\n\t\tProduct MENU\n\n";
-cout<<"====================================================\n";
-cout<<"ITEM.NO.\t\tNAME\t\tPRICE\n";
-cout<<"====================================================\n";
+cout<<"=====================================================================\n";
+cout<<"ITEM.NO."<<setw(10)<<"NAME"<<setw(25)<<setw(22)<<"PRICE"<<setw(25)<<"Discount"<<setw(5)<<"|"<<endl;
+cout<<"=====================================================================\n";
 while(f.read((char*)&s,sizeof(supermarket)))
 {
-cout<<s.itemNumber<<"\t\t"<<s.name<<"\t\t"<<s.price<<endl;
+cout<<setw(15)<<left<<s.itemNumber
+	<<setw(23)<<left<<s.name
+	<<setw(13)<<left<<s.price
+	<<setw(12)<<right<<s.dis<<"%"<<endl;
 }
 f.close();
 }
