@@ -228,7 +228,7 @@ void supermarket::intro()
 {
 system("cls");
 cout<<"PROJECT : Inventory Management && Billing system";
-cout<<"\n\nMADE BY : Team HoneyBear!! (2HM) "<<endl;
+cout<<"\n\nMADE BY : Team ASCII-Pirates (2HM) "<<endl;
 cout<<"Author : \n\t[ Arfin jawad walid]\n\t[  Sheikh Tanvir   ]\n\t[       Wasif      ]\n\t[    Jahiat Efaz   ]"<<endl;
 }
 
